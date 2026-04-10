@@ -497,6 +497,103 @@ p {
   transition-delay: 0.24s;
 }
 
+.certification-section {
+  background: linear-gradient(135deg, rgba(3, 122, 199, 0.08), rgba(43, 182, 115, 0.06));
+  border-top: 1px solid rgba(3, 122, 199, 0.15);
+  border-bottom: 1px solid rgba(3, 122, 199, 0.15);
+}
+
+.certification-content {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 2.2rem;
+  box-shadow: 0 10px 32px rgba(3, 122, 199, 0.12);
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.cert-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.iso-badge {
+  width: 120px;
+  height: auto;
+  max-width: 140px;
+  filter: drop-shadow(0 4px 12px rgba(3, 122, 199, 0.15));
+}
+
+.cert-info {
+  min-width: 0;
+}
+  font-size: 1.4rem;
+  color: var(--accent-deep);
+  margin-bottom: 0.6rem;
+}
+
+.cert-address {
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 1.6rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.cert-details h4 {
+  font-size: 1.1rem;
+  color: var(--ink);
+  font-family: "Syne", sans-serif;
+  margin: 1.2rem 0 0.6rem;
+  font-weight: 600;
+}
+
+.cert-details p {
+  margin-bottom: 0.8rem;
+}
+
+.cert-details p strong {
+  color: var(--ink);
+}
+
+.cert-scope {
+  list-style: none;
+  padding: 0;
+  margin: 0.8rem 0 1.6rem;
+}
+
+.cert-scope li {
+  padding: 0.5rem 0 0.5rem 1.8rem;
+  position: relative;
+  color: var(--muted);
+}
+
+.cert-scope li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.9rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.cert-cta {
+  margin-top: 1.6rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--line);
+  text-align: center;
+}
+
+.cert-cta .btn {
+  margin-top: 0.6rem;
+}
+
 @media (max-width: 980px) {
   .hero-grid,
   .process-grid,
@@ -511,6 +608,10 @@ p {
 
   .gallery-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .certification-content {
+    grid-template-columns: 1fr;
   }
 
   .hero-media img,
